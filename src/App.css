@@ -1,38 +1,258 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+  color: gold;
+}
+
+.classes{
+  background-color: #9b7ede;
+  color: white;
+  min-height: 100vh;
+}
+
+.logo{
+  flex: 1;
+  color: #dee55b;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.banner{
+  background-image: url(../public/banner.jpg);
+}
+
+.bannerContext{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  justify-content: space-around; 
+}
+
+.tagline{
+  display: flex;
+  height: 40%;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel{
+  height: 50%;
+  display: flex;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.carouselItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+}
+
+.pad{
+  padding-bottom: 50px;
+}
+
+.row{
+  background-color: "#9b7ede";
+  cursor: pointer;
+  &:hover{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
+  font-family: "Montserrat";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.glass{
+  width: 100%;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass2{
+  width: 30%;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glassSharp{
+  width: 100%;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25;
+  padding-top: 0;
+}
+
+.marketData{
+  padding-top: 20px;
+  align-self: center;
+  padding: 25px;
+  padding-top: 10px;
+  width: 100%;
+  columns: 200px 1;
+}
+
+.heading{
+  font-weight: bold;
+  margin-bottom: 20;
+  font-family: "Montserrat"; 
+  margin-left: 10px;
+}
+
+.heading2{
+  font-weight: 400;
+  margin-bottom: 20;
+  font-family: "Montserrat"; 
+}
+
+.description{
+  width: 100%;
+  font-family: "Montserrat";
+  padding: 25px;
+  padding-bottom: 15px;
+  text-align: justify; 
+}
+
+.container2{
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 25px;
+  padding: 40px;
+}
+
+@media only screen and (max-width: 768px){
+  .container2{
+    width: 100%;
+    margin-top: 0;
+    padding: 20;
+    padding-top: 0;
+  }
+}
+
+.modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paper{
+  width: 100px;
+  background-color: rgb(216, 186, 215);
   color: white;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.google{
+  padding: 24px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container3{
+  width: 350px;
+  padding: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+}
+
+.profile{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 92%;
+}
+
+.logout{
+  height: 8%;
+  width: 100%;
+  background-color: #dee55b;
+  margin-top: 20px;
+}
+
+.picture{
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  background-color: #9b7ede;
+  object-fit: contain;
+}
+
+.watchlist{
+  flex: 1;
+  width: 100%;
+  background-color: grey;
+  border-radius: 10px;
+  padding: 15px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  overflow-y: scroll;
+}
+
+.coin{
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9b7ede;
+  box-shadow: 0px 0px 3px black;
 }
