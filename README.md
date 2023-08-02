@@ -1,4 +1,4 @@
-This is the frontEnd done, backend in progress
+This is the full stack deployment of TASK 1 SDE internship 2023 LUGANODES ( reg no. 20BAI8028 || 20BAI10028 ) 
 
 # Getting Started with Create React App
 
